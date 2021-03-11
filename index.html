@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>IEXE-Tec</title>
+	<link rel="icon" href="img/Icono_iexe.png">
+
+
+	<!-- PLUGINS DE CSS  -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/plugin/bootstrap-datepicker.standalone.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+
+	<!-- PLUGINS DE JS  -->
+
+
+	<script src="js/jquey.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/plugins/bootstrap-datepicker.min.js"></script>
+
+</head>
+<body>
+
+	<!-- CABECERA -->
+	<header class="container-fluid">
+
+		<div class="container" >
+			<div class="row">
+
+				<!--LOGO-->
+				<div class="col-10  col-sm-10 col-md-7 col-lg-8 logo_uni">
+
+					<a href="index.html">
+						<figure>
+							<img src="img/iexetec_blanco.png" alt="logo de Universidad IEXE Tec" class="img-fluid logotipo">
+						</figure>
+					</a>
+
+				</div>
+
+				<!-- Fotografia del usuario -->
+				<div class="d-none d-md-block col-md-1 col-lg-1 p-1">
+
+					<figure>
+						<img src="img/Foto_Student.jpg" alt="Alumnos de IEXEC Tec" class="img-fluid foto_usuario" >
+					</figure>
+
+				</div>
+
+				<!-- Nombre del usario -->
+				<div class="d-none d-md-block col-md-3 col-lg-2 lead nombre_usuario d-flex text-white pt-lg-3 pt-2">
+					Danna Sofia
+				</div>
+
+
+
+				<div class="mt-2 mt-sm-2 mt-md-0 col-2 col-sm-1 col-md-1 col-lg-1 pt-lg-3 pt-2 text-white menu_burger">
+					<span class="icon-menu"></span>
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+
+	<!-- Agregar nuevo proyecto -->
+
+	<div class="container-fluid nuevo_proyecto">
+
+
+
+
+	</div>
+
+
+
+
+	<!-- SECCION PROYECTOS -->
+	<section class="proyectos py-4">
+		<div class="container">
+			<div class="display-4 font-weight-bold pb-4 nav_materias">Inicio > Inteligencia de negocios > Proyectos</div>
+
+			<div class="row mb-2">
+
+				<div class="col-12 col-md-7 mis_proyectos">				
+					Mis proyectos
+				</div>
+
+				<div class="btn btn-primary col-md-3 pt-2 ml-12 nuevo_proyecto">Agregar nuevo proyecto</div>
+
+
+			</div>
+
+
+
+			<div class="row text-center">
+				<article class=" col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card">
+						<figure class="photo1"></figure>
+
+						<p class="titulo_proyecto">Inteligencia artificial</p>
+
+					</div>			
+
+
+				</article>
+
+				<article class="col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card">
+						<figure class="photo2"></figure>
+						<p class="titulo_proyecto">Tecnologías de información</p>
+					</div>
+				</article>
+
+				<article class=" col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card">
+						<figure class="photo3"></figure>
+						<p class="titulo_proyecto">Ciencia de datos</p>
+					</div>
+				</article>
+
+				<article class=" col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card">
+						<figure class="photo4"></figure>
+						<p class="titulo_proyecto">Robotica</p>
+					</div>
+				</article>
+
+				<article class=" col-12 col-md-6 col-lg-3 mb-3">
+					<div class="card">
+						<figure class="photo5"></figure>
+						<p class="titulo_proyecto">Reconocimiento de plantas</p>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<form method="POST">
+		
+		<div class="container-fluid form_nuevo_proyecto">
+
+		<div class="container col-12 col-lg-7 contenedor_formulario">
+
+			<a href="#" class="btnClose mt-4">X</a>
+
+
+			<div class="cargar_archivo d-none d-md-block text-center mb-2">
+				<figure class="offset-5">
+					
+				</figure>
+
+				<p><span>Arrastre y suelte el archivo aquí</span> </p>
+				<p>o</p>
+				
+				
+
+			</div>
+			<input type="file" name="">
+
+
+			<div class="form-group">
+				<label for="nombre_Proyecto">Nombre del proyecto:</label>
+				<input type="text" class="form-control" id="nombre_Proyecto" placeholder="Indique el nombre del proyecto" autocomplete="off">
+			</div>
+
+
+			<div class="form-group">
+				<label for="descripcionProyecto">Agregar una breve descripción:</label>
+				<textarea class="form-control" rows="6" placeholder="Escribir una breve descripción del proyecto" id="descripcionProyecto"></textarea>
+			</div>
+
+
+
+			<div class="form-group col-12 col-md-8 d-inline-block">
+				<label for="tecnologias_usadas" >Tecnologías usadas:</label>
+
+				<input type="text" class="form-control" id="tecnologias_usadas" placeholder="Tecnologías ocupadas durante el desarrollo" autocomplete="off">
+
+			</div>
+
+			<div class="btn btn-primary col-12 col-lg-3 mt-4 mb-3">Agregar</div>
+
+
+			<div class="tecnologias_usadas">
+
+				<div class="btn btn-success">HTML</div>
+				<div class="btn btn-success">CSS</div>
+				<div class="btn btn-success">JS</div>
+				<div class="btn btn-success">jQuery</div>
+				<div class="btn btn-success">ADOBE XD</div>
+				<div class="btn btn-success">Bootstrap</div>
+				<div class="btn btn-success">iconmons</div>
+				<div class="btn btn-success">Lorem ipsum, dolor sit amet</div>
+
+			</div>
+
+
+			<div class="form-group col-12 d-inline-block">
+				<label for="para_asignatura" >Asigantura para el que se desarrollo el proyecto:</label>
+
+				<select class="form-control opciones" id="para_asignatura">
+                    <option>Asignatura 1</option>
+                    <option>Asignatura 2</option>
+                    <option>Asignatura 3</option>
+                    <option>Asignatura 4</option>
+                    <option>Asignatura 5</option>
+                  </select>
+
+			</div>
+
+
+			<div class="row ">
+				<div class="col-12 col-md-4">
+				
+				<label for="demo">Fecha de inicio:</label>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control datepicker fecha_inicio" placeholder="01-01-2021" id="demo" name="email">
+						<div class="input-group-append">
+							<span class="input-group-text"><span class="icon-calendar"></span></span>
+						</div>
+					</div>
+
+			</div>	
+
+			
+			<div class="col-12 col-md-4">
+				
+				<label for="demo">Fecha de finalización:</label>
+					<div class="input-group mb-3">
+						<input type="text" class="form-control datepicker fecha_fin" placeholder="31-12-2021" id="demo" name="email">
+						<div class="input-group-append">
+							<span class="input-group-text"><span class="icon-calendar"></span></span>
+						</div>
+					</div>
+
+			</div>	
+
+			</div>
+
+			<div class="form-group col-12 col-md-8 d-inline-block">
+				<label for="habilidades_adquiridas" >Habilidades adquiridas:</label>
+
+				<input type="text" class="form-control" id="habilidades_adquiridas" placeholder="Habilidades adquiridas durante el desarrollo" autocomplete="off">
+
+			</div>
+
+			<div class="btn btn-primary col-12 col-lg-3 mt-4 mb-3">Agregar</div>
+
+
+			<div class="tecnologias_usadas">
+
+				<div class="btn btn-success">Trabajo en equipo</div>
+				<div class="btn btn-success">Creatividad</div>
+				<div class="btn btn-success">Compromiso</div>
+				<div class="btn btn-success">Persuación</div>
+				<div class="btn btn-success">Liderazgo</div>
+
+			</div>
+
+
+			<div class="pb-5 mt-3">
+				
+				<button type="submit" class="btn btn-primary col-12 col-md-3 mt-3 offset-md-3">Guardar mi proyecto</button>
+
+
+				<div class="btn btn-danger col-12 col-md-3 mt-3">Cancelar</div>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+	</form>
+
+
+	<footer class="pie_de_pagina text-center text-lg-right text-white">
+
+		<p class="m-0 py-2">IEXETec - 2021 Todos los derechos reservados</p>
+
+	</footer>
+
+
+	<script src="js/script.js"></script>
+
+</body>
+</html>

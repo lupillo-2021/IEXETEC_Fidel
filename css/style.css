@@ -1,0 +1,250 @@
+/* TIPOGRAFIAS */
+@font-face{
+	font-family: "Montserrat-Light";
+	src: url("../tipografias/Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "PTSans-Bold";
+	src: url("../tipografias/PTSans-Bold.ttf") format("truetype");
+}
+
+@font-face{
+	font-family: "PTSans-Regular";
+	src: url("../tipografias/PTSans-Regular.ttf") format("truetype");
+}
+
+
+/* ESCRITORIO(XL revisamos en 1336px en adelante) */
+*{
+	font-family: "PTSans-Regular";
+}
+
+
+ul, ol {
+	list-style: none;
+}
+
+a:visited, a:link, a:focus, a:hover, a:active {
+	list-style: none;
+	text-decoration: none;
+}
+
+
+/*HEADER*/
+
+header, footer {
+	background: #002939;
+}
+
+header .logotipo {
+	width: 25%;
+}
+
+
+.logotipo, .foto_usuario, .nombre_usuario {
+	margin-top: 10px;
+}
+
+
+.menu_burger {
+	font-size: 2.5em;
+}
+
+div.nav_materias {
+	font-size: 25px;
+}
+
+div.mis_proyectos {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-family: PTSans-Bold;
+}
+
+div.card:hover {
+	box-shadow: 0 0 10px #0c0c0c3b;
+	cursor: pointer;
+}
+
+
+.photo1 {
+	height: 180px;	
+	background: url(../img/inteligencia_artificial.jpg);
+	background-size: cover; 
+	background-position: left;
+}
+
+.photo2 {
+	height: 180px;	
+	background: url(../img/tecnologias_de_informacion.jpg);
+	background-size: cover; 
+	background-position: left;
+}
+
+.photo3 {
+	height: 180px;	
+	background: url(../img/ciencia_de_datos.jpg);
+	background-size: cover; 
+	background-position: left;
+}
+
+.photo4 {
+	height: 180px;	
+	background: url(../img/robotica.jpg);
+	background-size: cover; 
+	background-position: left;
+}
+
+.photo5 {
+	height: 180px;	
+	background: url(../img/plantas_medicinales.jpg);
+	background-size: cover; 
+	background-position: left;
+}
+
+.card p:hover {
+	font-size: 1.3rem;
+	transition: .10s all;
+}
+
+
+
+.btnClose {
+	position: absolute;
+	top: 20px;
+	right: 23%;
+	color: white ;
+}
+
+
+.form-control {
+	background-color: #454E57 !important;
+	color: white !important;
+	border-radius: 0%;
+	border: none;
+	border-bottom: 1px solid #00B2F0;
+	font-size: 15px;
+}
+
+
+.form_nuevo_proyecto {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background: rgba(33,64,85,.56);
+	overflow-x: hidden;
+	font-weight: 100;
+	display: none;
+	line-height: 25px;
+}
+
+
+.cargar_archivo {
+	width: 100%;
+	height: 200px;
+	border: 1px solid white;
+}
+
+.cargar_archivo p {
+	color: white;
+}
+
+.cargar_archivo figure {
+	width: 100px;
+	background: url(../img/cloud-computing.png);
+
+	height: 100px;	
+	background-size: contain; 
+}
+div.contenedor_formulario {
+	background: #454E57;
+	font-size: 30px;
+	margin-top: 30px;
+	padding-top: 50px;
+	border-radius: 1%;
+}
+
+.contenedor_formulario label, input  {
+	font-family: Montserrat-Light;
+	font-size: 15px;
+}
+
+
+.form_nuevo_proyecto .form-group {
+	margin-bottom: 12px;
+}
+
+.form_nuevo_proyecto label {
+	color: #D2D2D2;
+	font-size: 1.2rem;
+	font-family: PTSans-Regular;
+}
+
+textarea {
+	border: 1px solid #00B2F0 !important;
+}
+
+
+
+div.tecnologias_usadas .btn{
+
+	margin: 5px 0px;
+}
+
+/* Table horizontal (LG revisamos en 1024px) */
+@media (max-width: 1199px) and (min-width: 992px){
+
+}
+
+
+/* Table vertical (MD revisamos en 768px) */
+
+@media (max-width: 991px) and (min-width: 768px){
+	header .logotipo {
+		width: 30%;
+	}
+
+	.btnClose {
+		right: 13%;
+	}
+}
+
+/* MOVIL horizontal (LG revisamos en 576px) */
+@media (max-width: 767px) and (min-width: 576px){
+	header .logotipo {
+		width: 40%;
+	}
+
+	.btnClose {
+		right: 13%;
+	}
+}
+
+
+/* MOVIL vertical (LG revisamos en 320px) */
+@media (max-width: 575px){
+	header .logotipo {
+		width: 50%;
+	}
+
+	div.nav_materias {
+		font-size: 15px;
+	}
+
+	.nuevo_proyecto {
+		margin-left: 5%;
+		width: 90%;
+	}
+
+	.btnClose {
+		
+		right: 5%;
+	}
+
+	.menu_burger {
+		margin-top: 0px;
+	}
+}
